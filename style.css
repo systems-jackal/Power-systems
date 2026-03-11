@@ -1,0 +1,33 @@
+/* Brands Section */
+.brands {
+    background: #fff;
+    text-align: center;
+}
+
+.brands-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.brand-item {
+    flex: 0 1 150px;
+    font-size: 1.2rem;
+    color: #1e2b5e;
+    font-weight: 600;
+}
+
+.brand-item i {
+    display: block;
+    font-size: 3rem;
+    color: #f4b400;
+    margin-bottom: 10px;
+}
+
+.brands-note {
+    margin-top: 40px;
+    font-style: italic;
+    color: #555;
+}
