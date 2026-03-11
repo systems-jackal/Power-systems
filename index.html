@@ -41,7 +41,7 @@
         </div>
     </section>
 
-    <!-- Services Section (now including solar) -->
+    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">Our Expertise</h2>
@@ -96,7 +96,7 @@
         </div>
     </section>
 
-    <!-- Industries Section (unchanged) -->
+    <!-- Industries Section -->
     <section id="industries" class="industries">
         <div class="container">
             <h2 class="section-title">Industries We Serve</h2>
@@ -135,7 +135,7 @@
         </div>
     </section>
 
-    <!-- About Section (unchanged) -->
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container about-container">
             <div class="about-text">
@@ -158,7 +158,7 @@
         </div>
     </section>
 
-    <!-- Contact Section (unchanged) -->
+    <!-- Contact Section (updated for Supabase) -->
     <section id="contact" class="contact">
         <div class="container contact-container">
             <div class="contact-info">
@@ -174,7 +174,8 @@
             </div>
             <div class="contact-form">
                 <h3>Request a Quote</h3>
-                <form action="https://formspree.io/f/xqeyqqbp" method="POST">
+                <!-- Form now uses JavaScript + Supabase -->
+                <form id="contact-form">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <input type="text" name="phone" placeholder="Phone Number">
@@ -182,7 +183,7 @@
                         required></textarea>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
-                <!-- Replace 'your-form-id' with a real Formspree endpoint (free) -->
+                <div id="form-status"></div> <!-- Success/error messages appear here -->
             </div>
         </div>
     </section>
@@ -194,6 +195,9 @@
         </div>
     </footer>
 
+    <!-- Supabase client library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- Your custom script -->
     <script src="script.js"></script>
 </body>
 
