@@ -1,4 +1,4 @@
-/* style.css – Londiani Electricals & Hardware (Complete) */
+/* style.css – Londiani Electricals & Hardware (Final) */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap');
 
@@ -98,6 +98,11 @@ section {
     color: #fff;
     text-decoration: none;
     letter-spacing: -0.5px;
+}
+
+.logo i {
+    color: #f57c00;
+    margin-right: 8px;
 }
 
 .nav-menu {
@@ -395,7 +400,6 @@ section {
     font-weight: 600;
 }
 
-/* Parts Search */
 .parts-search {
     position: relative;
     max-width: 500px;
@@ -609,6 +613,49 @@ section {
     margin-right: 8px;
 }
 
+/* Safety Section */
+.safety {
+    background: #f2f4f8;
+    padding: 80px 0;
+}
+
+.safety-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.safety-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.safety-item:hover {
+    transform: translateY(-5px);
+}
+
+.safety-item i {
+    font-size: 3rem;
+    color: #f57c00;
+    margin-bottom: 15px;
+}
+
+.safety-item h3 {
+    color: #1e2b5e;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.safety-item p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
 /* Blog Section */
 .blog {
     background: #f9f9f9;
@@ -696,6 +743,43 @@ section {
 .blog-cta {
     text-align: center;
     margin-top: 50px;
+}
+
+/* FAQ Section */
+.faq {
+    background: #f2f4f8;
+    padding: 80px 0;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.faq-item {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h4 {
+    color: #1e2b5e;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-item h4 i {
+    color: #f57c00;
+}
+
+.faq-item p {
+    color: #555;
 }
 
 /* Industries Section */
@@ -853,6 +937,7 @@ section {
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
     width: 100%;
     padding: 12px 15px;
@@ -864,6 +949,7 @@ section {
 }
 
 .contact-form input:focus,
+.contact-form select:focus,
 .contact-form textarea:focus {
     outline: none;
     border-color: #f57c00;
@@ -894,7 +980,7 @@ footer {
     margin: 0 5px;
 }
 
-/* Floating WhatsApp Button */
+/* Floating Buttons */
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -916,6 +1002,37 @@ footer {
     background-color: #128C7E;
     transform: scale(1.1);
     color: white;
+}
+
+.call-float {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background-color: #1e2b5e;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: all 0.3s;
+}
+
+.call-float:hover {
+    background-color: #f57c00;
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Map container */
+.map-container {
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Mobile Responsive */
@@ -986,11 +1103,10 @@ footer {
         font-size: 0.9rem;
     }
 
-    .offers-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .blog-grid {
+    .offers-grid,
+    .blog-grid,
+    .faq-grid,
+    .safety-grid {
         grid-template-columns: 1fr;
     }
 
@@ -999,12 +1115,17 @@ footer {
         gap: 10px;
     }
 
-    .whatsapp-float {
+    .whatsapp-float,
+    .call-float {
         bottom: 15px;
         right: 15px;
         width: 50px;
         height: 50px;
         font-size: 28px;
         line-height: 50px;
+    }
+
+    .call-float {
+        bottom: 75px;
     }
 }
