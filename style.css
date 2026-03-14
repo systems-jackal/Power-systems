@@ -1,4 +1,4 @@
-/* style.css – Londiani Electricals & Hardware */
+/* style.css – Londiani Electricals & Hardware (Complete) */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap');
 
@@ -395,6 +395,36 @@ section {
     font-weight: 600;
 }
 
+/* Parts Search */
+.parts-search {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.parts-search input {
+    width: 100%;
+    padding: 15px 20px 15px 50px;
+    border: 2px solid #eaeaea;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.parts-search input:focus {
+    outline: none;
+    border-color: #f57c00;
+}
+
+.parts-search .search-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 1.2rem;
+}
+
 .parts-categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -476,131 +506,6 @@ section {
 
 .warranty-badge strong {
     font-size: 1.2rem;
-}
-
-/* Quotation Section */
-.quotation {
-    background: #f2f4f8;
-    padding: 80px 0;
-}
-
-.quote-container {
-    background: white;
-    border-radius: 16px;
-    padding: 40px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.quote-header {
-    text-align: center;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #eaeaea;
-}
-
-.quote-header h3 {
-    color: #1e2b5e;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.quote-ref {
-    color: #f57c00;
-    font-weight: 600;
-}
-
-.quote-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
-}
-
-.quote-table th {
-    background: #1e2b5e;
-    color: white;
-    padding: 12px;
-    text-align: left;
-    font-weight: 600;
-}
-
-.quote-table td {
-    padding: 12px;
-    border-bottom: 1px solid #eaeaea;
-}
-
-.quote-table tr:hover {
-    background: #f9f9f9;
-}
-
-.price-placeholder {
-    color: #999;
-    font-style: italic;
-    text-align: center;
-}
-
-.price-placeholder::before {
-    content: "Quote on request";
-    font-size: 0.9rem;
-}
-
-.subtotal-row td,
-.grand-total-row td {
-    background: #f5f5f5;
-    font-weight: 600;
-    border-top: 2px solid #ddd;
-}
-
-.grand-total-row td {
-    font-size: 1.1rem;
-    color: #1e2b5e;
-}
-
-.quote-footer {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 2px solid #eaeaea;
-}
-
-.warranty-info {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 12px;
-    border-left: 4px solid #f57c00;
-}
-
-.warranty-info h4 {
-    color: #1e2b5e;
-    margin: 10px 0 15px;
-    font-size: 1.2rem;
-}
-
-.warranty-info ul {
-    list-style: none;
-}
-
-.warranty-info li {
-    padding: 8px 0;
-    border-bottom: 1px dashed #eaeaea;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.warranty-info li i {
-    color: #f57c00;
-}
-
-.note {
-    background: #fff3e0;
-    padding: 20px;
-    border-radius: 12px;
-    color: #666;
-    font-style: italic;
 }
 
 /* Offers Section */
@@ -702,6 +607,95 @@ section {
 .offers-cta i {
     color: #f57c00;
     margin-right: 8px;
+}
+
+/* Blog Section */
+.blog {
+    background: #f9f9f9;
+    padding: 80px 0;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+    border: 1px solid #eaeaea;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.blog-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.05);
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-date {
+    color: #f57c00;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.blog-date i {
+    margin-right: 5px;
+}
+
+.blog-content h3 {
+    color: #1e2b5e;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog-content p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #f57c00;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: gap 0.3s;
+}
+
+.read-more:hover {
+    gap: 10px;
+}
+
+.blog-cta {
+    text-align: center;
+    margin-top: 50px;
 }
 
 /* Industries Section */
@@ -900,6 +894,30 @@ footer {
     margin: 0 5px;
 }
 
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 60px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: all 0.3s;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+    color: white;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .nav-menu {
@@ -968,28 +986,25 @@ footer {
         font-size: 0.9rem;
     }
 
-    .quote-footer {
+    .offers-grid {
         grid-template-columns: 1fr;
     }
 
-    .quote-container {
-        padding: 20px;
-    }
-
-    .quote-table {
-        font-size: 0.9rem;
-    }
-
-    .price-placeholder::before {
-        content: "On request";
-    }
-
-    .offers-grid {
+    .blog-grid {
         grid-template-columns: 1fr;
     }
 
     .about-badges {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .whatsapp-float {
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+        line-height: 50px;
     }
 }

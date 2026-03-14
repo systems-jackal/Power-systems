@@ -21,6 +21,7 @@
                 <li><a href="#brands">Brands</a></li>
                 <li><a href="#spare-parts">Spare Parts</a></li>
                 <li><a href="#offers">Offers</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#industries">Industries</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -105,12 +106,12 @@
         </div>
     </section>
 
-    <!-- Brands Showcase - Focused on Perkins, Cummins, CAT -->
+    <!-- Brands Showcase -->
     <section id="brands" class="brands">
         <div class="container">
             <h2 class="section-title">Premium Generator Brands</h2>
 
-            <!-- Main brands - prominently displayed -->
+            <!-- Main brands -->
             <div class="main-brands-grid">
                 <!-- Perkins -->
                 <div class="main-brand-item">
@@ -149,7 +150,7 @@
                 </div>
             </div>
 
-            <!-- Other brands we work with -->
+            <!-- Other brands -->
             <div class="other-brands">
                 <h4>Also available:</h4>
                 <div class="other-brands-grid">
@@ -164,7 +165,7 @@
         </div>
     </section>
 
-    <!-- Spare Parts Section -->
+    <!-- Spare Parts Section with Search -->
     <section id="spare-parts" class="spare-parts">
         <div class="container">
             <h2 class="section-title">Genuine Spare Parts</h2>
@@ -172,6 +173,13 @@
                 brands. <strong>All spare parts and servicing components come with a 6-month warranty</strong> against
                 manufacturing defects. <span class="highlight">Special member discounts available on all parts.</span>
             </p>
+
+            <!-- Search Bar -->
+            <div class="parts-search">
+                <input type="text" id="partsSearch"
+                    placeholder="Search spare parts (e.g., air filter, battery, controller...)">
+                <i class="fas fa-search search-icon"></i>
+            </div>
 
             <div class="parts-categories">
                 <!-- Engine Parts -->
@@ -328,6 +336,54 @@
         </div>
     </section>
 
+    <!-- Blog / News Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest News & Tips</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                            alt="Generator Service">
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-date"><i class="far fa-calendar-alt"></i> March 10, 2025</p>
+                        <h3>5 Signs Your Generator Needs Servicing</h3>
+                        <p>Don't wait for a breakdown. Learn the warning signs and keep your power reliable.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                            alt="ATS Installation">
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-date"><i class="far fa-calendar-alt"></i> February 28, 2025</p>
+                        <h3>Benefits of Automatic Transfer Switches</h3>
+                        <p>How ATS ensures seamless power transition and protects your equipment.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                            alt="Solar Panels">
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-date"><i class="far fa-calendar-alt"></i> February 15, 2025</p>
+                        <h3>Solar + Generator: Hybrid Solutions</h3>
+                        <p>Combine solar with generator backup for maximum savings and reliability.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-cta">
+                <a href="#" class="btn btn-secondary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Industries Section -->
     <section id="industries" class="industries">
         <div class="container">
@@ -449,6 +505,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254711875736?text=Hello%20Londiani%20Electricals%2C%20I%20need%20assistance%20with..."
+        class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Supabase client library -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
